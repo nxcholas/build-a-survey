@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Build a Survey Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1" />
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+     <h1 id="title">Beauty Supply Inquiry Form</h1>
+     <p id="description">Thank you for your interest. We'll get back to you as soon as possible!</p>
+    </header>
+        <form id="survey-form">
+          <fieldset id="user-info">
+            <label id="name-label">Name</label><input id="name" type="text" required placeholder="Enter your name">
+            <label id="email-label">Email</label><input id="email" type="email" required placeholder="Enter your email">
+            <label id="number-label">Phone Number</label><input id="number" type="tel" placeholder="Enter your phone number">
+          </fieldset>
+          <fieldset id="interest">
+            <label for="dropdown">Which option best describes your current business or interest?</label>
+          <select id="dropdown">
+            <option disabled selected value="">Select One</option>
+            <option value="1">B2C</option>
+            <option value ="2">B2B</option>
+            <option value="3">Independent Contractor</option>
+            <option value="4">Other</option>
+          </select>
+          </fieldset>
+          <fieldset id="business-type">
+            <label>How would you describe your type of business?</label>
+            <label>
+                <input name="user-recommend" value="definitely" type="radio" checked> Storefront
+            </label>
+            <label>
+                <input name="user-recommend" value="maybe" type="radio"> E-Commerce
+            </label>
+            <label>
+                <input name="user-recommend" value="not-sure" type="radio"> Not sure
+            </label>
+          </fieldset>
+          <fieldset id="contact">
+            <label>
+                What is your preferred method of contact?
+            </label>
+                <select>
+                    <option disabled selected value="">Select One</option>
+                    <option value="1">Email</option>
+                    <option value ="2">Call or Text</option>
+                    <option value="3">Invoice</option>
+                    <option value="4">Mail</option>
+                </select>
+          </fieldset>
+          <fieldset id="product-type">
+            <label for="products">
+                What types of products are you interested in? (Check all that apply)
+            </label>
+            <label>
+                <input name="products" type="checkbox" value="1"> Creams, emulsions, lotions, gels and oils
+            </label>
+            <label>
+                <input name="products" type="checkbox" value="2"> Face masks
+            </label>
+            <label>
+                <input name="products" type="checkbox" value="3"> Tinted bases
+            </label>
+            <label>
+                <input name="products" type="checkbox" value="4"> Make-up powders, after-bath powders, hygenic powders, etc.
+            </label>
+            <label>
+                <input name="products" type="checkbox" value="5"> Deodorants and anti-persirants
+            </label>
+            <label>
+                <input name="products" type="checkbox" value="6"> Hair care products
+            </label>
+            <label>
+                <input name="products" type="checkbox" value="7"> Make-up removal
+            </label>
+            <label>
+                <input name="products" type="checkbox" value="8"> Nail care
+            </label>
+            <label>
+                <input name="products" type="checkbox" value="9"> Lip products
+            </label>
+          </fieldset>
+          <fieldset id="comments">
+            <label for="comments">
+                Anything else we would need to know?
+            </label>
+            <textarea placeholder="Enter your comment here...">
+            </textarea>
+          </label>
+          </fieldset>
+          <fieldset id="submit-btn">
+            <input type="submit" id="submit">
+          </fieldset>
+        </form>
+  </body>
+<html>
